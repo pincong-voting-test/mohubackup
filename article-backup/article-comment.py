@@ -16,10 +16,10 @@ data={}
 proxies = {
     'https' : '127.0.0.1:9910'
 }
-startpage=6200
-endpage=6214
+startpage=6170
+endpage=6200
 for page in range(startpage,endpage):
-    time.sleep(1)
+    time.sleep(10)
     try:
         
         req = requests.get(base_url + 'article/' + str(page), headers = headers, proxies = proxies)
